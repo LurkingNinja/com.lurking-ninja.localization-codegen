@@ -1,0 +1,18 @@
+{
+  "name": "com.lurkingninja.localization-codegen",
+  "displayName": "Localization Codegen",
+  "version": "1.0.0",
+  "unity": "2021.3",
+  "description": "Localization binding dynamic code generation for static access.",
+  "documentationUrl": "https://lurking-ninja.com/",
+  "author": {
+    "name": "Lurking Ninja",
+    "email": "dev@lurking-ninja.com",
+    "url": "https://lurking-ninja.com/"
+  },
+  "unityRelease": "14f1",
+  "type": "library",
+  "dependencies": {
+    "com.unity.localization": ""
+  }
+}
