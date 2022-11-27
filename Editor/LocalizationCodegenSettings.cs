@@ -8,7 +8,7 @@ namespace LurkingNinja.Localization.Editor
     {
         private const string LocalizationCodegenConfigFolder = "Assets/Plugins/LurkingNinja/Editor";
         private const string LocalizationCodegenConfigFile =
-            LocalizationCodegenConfigFolder + "/InputCodegenConfig.asset";
+            LocalizationCodegenConfigFolder + "/LocalizationCodegenConfig.asset";
 
         public bool isEnabled = true;
 
