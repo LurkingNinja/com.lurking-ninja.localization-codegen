@@ -1,9 +1,9 @@
 # localization-codegen
 
 This is a simple package to automatically generate accessor code for the Localization package's SharedTable assets.
-The usage is simple. Install this package from the Package Manager by selecting the plus icon and clicking the Add package from Git URL option.
+The usage is simple. Install the prerequisite [Codegen](https://github.com/LurkingNinja/com.lurking-ninja.codegen) package and after that, this package from the Package Manager by selecting the plus icon and clicking the Add package from Git URL option.
 After the package installed, all you need to do is to set up your localization, create your Locales. 
-When you SAVE(!) a new Shared Table asset this package generates a file in the Assets/Plugins/LurkingNinja/LocalizationCodegen folder with the same name you named your asset with the exception of all spaces will be replaced with underscore character (_) and all special characters will be omitted. Please be careful with filenames from now on, they will serve as struct name in code as well.
+When you SAVE(!) a new Shared Table asset this package generates a file in the ```Assets/Plugins/LurkingNinja/LocalizationCodegen``` folder with the same name you named your asset with the exception of all spaces will be replaced with underscore character (_) and all special characters will be omitted. Please be careful with filenames from now on, they will serve as struct name in code as well.
 
 Actual use of the new code if fairly simple, here is an example usage code:
 ```csharp
