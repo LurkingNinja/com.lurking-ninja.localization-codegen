@@ -3,7 +3,8 @@
     "rootNamespace": "LurkingNinja.Localization",
     "references": [
         "Unity.Localization",
-        "Unity.Localization.Editor"
+        "Unity.Localization.Editor",
+        "com.lurking-ninja.codegen"
     ],
     "includePlatforms": [
         "Editor"
