@@ -1,3 +1,10 @@
+/***
+ * Localization Codegen
+ * Copyright (c) 2022-2023 Lurking Ninja.
+ *
+ * MIT License
+ * https://github.com/LurkingNinja/com.lurking-ninja.localization-codegen
+ */
 using System;
 using System.Linq;
 using System.Text;
