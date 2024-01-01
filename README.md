@@ -1,9 +1,10 @@
 # Localization Codegen
 This is a simple package to automatically generate accessor code for the [Localization](https://docs.unity3d.com/Packages/com.unity.localization@1.4/manual/index.html) package's [SharedTableData](https://docs.unity3d.com/Packages/com.unity.localization@1.4/api/UnityEngine.Localization.Tables.SharedTableData.html) assets.
 ## Installation
-Install the prerequisite [Codegen](https://github.com/LurkingNinja/com.lurking-ninja.codegen) package and after that, this package from the Package Manager by selecting the plus icon and clicking the Add package from Git URL option.
+When you install this package it will automatically try to install the prerequisite package: [Codegen](https://github.com/LurkingNinja/com.lurking-ninja.codegen).
+
 You can choose manually installing the package or from GitHub source
-### Using direct git source code
+### Add package from git URL
 Use the Package Manager's ```+/Add package from git URL``` function.
 The URL you should use is this:
 ```

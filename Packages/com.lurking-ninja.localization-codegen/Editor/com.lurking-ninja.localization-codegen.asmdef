@@ -17,9 +17,14 @@
     "defineConstraints": [],
     "versionDefines": [
         {
-            "name": "Select...",
+            "name": "com.lurkingninja.codegen",
             "expression": "",
-            "define": ""
+            "define": "LN_CODEGEN_PRESENT"
+        },
+        {
+            "name": "com.unity.localization",
+            "expression": "",
+            "define": "LN_LOCALIZATION_INSTALLED"
         }
     ],
     "noEngineReferences": false

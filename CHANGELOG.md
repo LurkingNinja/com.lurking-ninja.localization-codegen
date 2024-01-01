@@ -1,6 +1,10 @@
 # Changelog
 All notable changes to this project will be documented in this file.
 
+## [1.0.3] - 2024-01-01
+### Changed
+- Automatically installs the prerequisite package
+
 ## [1.0.2] - 2023-10-15
 ### Changed
 - AssetDatabase.SaveAssets call removed

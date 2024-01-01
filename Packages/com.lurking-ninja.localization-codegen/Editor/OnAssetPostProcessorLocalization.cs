@@ -5,19 +5,18 @@
  * MIT License
  * https://github.com/LurkingNinja/com.lurking-ninja.localization-codegen
  */
+#if LN_CODEGEN_PRESENT && LN_LOCALIZATION_INSTALLED
 using System;
 using System.Linq;
 using System.Text;
 using LurkingNinja.CodeGen.Editor;
 using UnityEditor;
 using UnityEditor.Localization;
-using UnityEngine;
 using UnityEngine.Localization.Tables;
 using Object = UnityEngine.Object;
 
 namespace LurkingNinja.Localization.Editor
 {
-    // To detect creation and saving an asset. We do not care about moving.
     [InitializeOnLoad]
     public class OnAssetPostProcessorLocalization : AssetPostprocessor
     {
@@ -30,14 +29,13 @@ namespace LurkingNinja.Localization.Editor
         private static void OnAssetPostProcessorLocalizationDestructor()
         {
             AssemblyReloadEvents.beforeAssemblyReload -= OnAssetPostProcessorLocalizationDestructor;
-            OnAssetPostProcessor
-                .RemoveListener(typeof(SharedTableData), ModifyCallback, DeleteCallback);
+            OnAssetPostProcessor.RemoveListener(
+                typeof(SharedTableData), ModifyCallback, DeleteCallback);
 
         }
 
         private static void ModifyCallback(Object obj, string path)
         {
-            Debug.Log("Changed.");
             if (!LocalizationCodegenSettings.Get.isEnabled) return;
             AssetPostProcessorHelper.WriteFile(path, LocalizationCodegenSettings.Get.path,
                 GenerateFileContent(obj as SharedTableData));
@@ -80,3 +78,20 @@ namespace LurkingNinja.Localization.Editor
         }
     }
 }
+#else
+using UnityEditor;
+using UnityEditor.PackageManager;
+
+namespace LurkingNinja.Localization.Editor
+{
+    [InitializeOnLoad]
+    public class OnAssetPostProcessorLocalizationInstall
+    {
+        static OnAssetPostProcessorLocalizationInstall()
+        {
+            Client.Add("com.unity.localization");
+            Client.Add("https://github.com/LurkingNinja/com.lurking-ninja.codegen.git");
+        }
+    }
+}
+#endif
