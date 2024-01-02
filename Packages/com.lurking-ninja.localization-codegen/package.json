@@ -1,17 +1,18 @@
 {
-  "name": "com.lurkingninja.localization-codegen",
+  "name": "com.lurking-ninja.localization-codegen",
   "displayName": "Localization Codegen",
+  "description": "Localization binding dynamic code generation for static access.",
   "version": "1.0.3",
   "unity": "2021.3",
-  "description": "Localization binding dynamic code generation for static access.",
-  "documentationUrl": "https://lurking-ninja.com/",
+  "documentationUrl": "https://github.com/LurkingNinja/com.lurking-ninja.localization-codegen",
+  "changelogUrl": "https://github.com/LurkingNinja/com.lurking-ninja.localization-codegen/blob/main/CHANGELOG.md",
+  "license": "MIT",
+  "licensesUrl": "https://github.com/LurkingNinja/com.lurking-ninja.localization-codegen/blob/main/LICENSE",
   "author": {
     "name": "Lurking Ninja",
     "email": "dev@lurking-ninja.com",
     "url": "https://lurking-ninja.com/"
   },
-  "unityRelease": "14f1",
-  "type": "library",
   "dependencies": {
     "com.unity.localization": "1.0.0"
   }

@@ -1,19 +1,19 @@
 {
   "dependencies": {
-    "com.lurkingninja.codegen": {
-      "version": "https://github.com/LurkingNinja/com.lurking-ninja.codegen.git",
-      "depth": 0,
-      "source": "git",
-      "dependencies": {},
-      "hash": "cb6e6b417b38e10163b1c9f8437ae0fa83a253f6"
-    },
-    "com.lurkingninja.localization-codegen": {
+    "com.lurking-ninja.localization-codegen": {
       "version": "file:com.lurking-ninja.localization-codegen",
       "depth": 0,
       "source": "embedded",
       "dependencies": {
         "com.unity.localization": "1.0.0"
       }
+    },
+    "com.lurkingninja.codegen": {
+      "version": "https://github.com/LurkingNinja/com.lurking-ninja.codegen.git",
+      "depth": 0,
+      "source": "git",
+      "dependencies": {},
+      "hash": "cb6e6b417b38e10163b1c9f8437ae0fa83a253f6"
     },
     "com.unity.addressables": {
       "version": "1.21.19",
