@@ -24,7 +24,7 @@
         {
             "name": "com.unity.localization",
             "expression": "",
-            "define": "LN_LOCALIZATION_INSTALLED"
+            "define": "LN_LOCALIZATION_PRESENT"
         }
     ],
     "noEngineReferences": false
