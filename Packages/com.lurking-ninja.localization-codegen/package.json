@@ -2,7 +2,7 @@
   "name": "com.lurking-ninja.localization-codegen",
   "displayName": "Localization Codegen",
   "description": "Localization binding dynamic code generation for static access.",
-  "version": "1.0.3",
+  "version": "1.0.4",
   "unity": "2021.3",
   "documentationUrl": "https://github.com/LurkingNinja/com.lurking-ninja.localization-codegen",
   "changelogUrl": "https://github.com/LurkingNinja/com.lurking-ninja.localization-codegen/blob/main/CHANGELOG.md",

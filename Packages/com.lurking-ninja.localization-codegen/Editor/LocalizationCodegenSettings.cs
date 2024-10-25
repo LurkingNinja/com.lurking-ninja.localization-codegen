@@ -5,17 +5,17 @@
  * MIT License
  * https://github.com/LurkingNinja/com.lurking-ninja.localization-codegen
  */
-using System.IO;
-using UnityEditor;
-using UnityEngine;
-
 namespace LurkingNinja.Localization.Editor
 {
+    using System.IO;
+    using UnityEditor;
+    using UnityEngine;
+
     public class LocalizationCodegenSettings : ScriptableObject
     {
-        private const string LOCALIZATION_CODEGEN_CONFIG_FOLDER = "Assets/Plugins/LurkingNinja/Editor";
-        private const string LOCALIZATION_CODEGEN_CONFIG_FILE =
-            LOCALIZATION_CODEGEN_CONFIG_FOLDER + "/LocalizationCodegenConfig.asset";
+        private const string _LOCALIZATION_CODEGEN_CONFIG_FOLDER = "Assets/Plugins/LurkingNinja/Editor";
+        private const string _LOCALIZATION_CODEGEN_CONFIG_FILE =
+            _LOCALIZATION_CODEGEN_CONFIG_FOLDER + "/LocalizationCodegenConfig.asset";
 
         public bool isEnabled = true;
 
@@ -57,12 +57,12 @@ using UnityEngine.Localization.Settings;
         private static LocalizationCodegenSettings GenerateConfigFile()
         {
             if (_config != null) return _config;
-            _config = AssetDatabase.LoadAssetAtPath<LocalizationCodegenSettings>(LOCALIZATION_CODEGEN_CONFIG_FILE);
+            _config = AssetDatabase.LoadAssetAtPath<LocalizationCodegenSettings>(_LOCALIZATION_CODEGEN_CONFIG_FILE);
             if (_config != null) return _config;
-            if (!Directory.Exists(LOCALIZATION_CODEGEN_CONFIG_FOLDER))
-                Directory.CreateDirectory(LOCALIZATION_CODEGEN_CONFIG_FOLDER);
+            if (!Directory.Exists(_LOCALIZATION_CODEGEN_CONFIG_FOLDER))
+                Directory.CreateDirectory(_LOCALIZATION_CODEGEN_CONFIG_FOLDER);
             _config = CreateInstance<LocalizationCodegenSettings>();
-            AssetDatabase.CreateAsset(_config, LOCALIZATION_CODEGEN_CONFIG_FILE);
+            AssetDatabase.CreateAsset(_config, _LOCALIZATION_CODEGEN_CONFIG_FILE);
             return _config;
         }
         

@@ -5,18 +5,18 @@
  * MIT License
  * https://github.com/LurkingNinja/com.lurking-ninja.localization-codegen
  */
-#if LN_CODEGEN_PRESENT && LN_LOCALIZATION_PRESENT
-using System;
-using System.Linq;
-using System.Text;
-using LurkingNinja.CodeGen.Editor;
-using UnityEditor;
-using UnityEditor.Localization;
-using UnityEngine.Localization.Tables;
-using Object = UnityEngine.Object;
+#if LN_LOCALIZATION_PRESENT
 
 namespace LurkingNinja.Localization.Editor
 {
+    using System;
+    using System.Linq;
+    using System.Text;
+    using UnityEditor;
+    using UnityEditor.Localization;
+    using UnityEngine.Localization.Tables;
+    using Object = UnityEngine.Object;
+
     [InitializeOnLoad]
     public class OnAssetPostProcessorLocalization : AssetPostprocessor
     {
@@ -78,19 +78,20 @@ namespace LurkingNinja.Localization.Editor
         }
     }
 }
+
 #else
-using UnityEditor;
-using UnityEditor.PackageManager;
 
 namespace LurkingNinja.Localization.Editor
 {
+    using UnityEditor;
+    using UnityEditor.PackageManager;
+
     [InitializeOnLoad]
-    public class LocalizationCodegenInstall
+    public class LocalizationInstall
     {
-        static LocalizationCodegenInstall()
+        static LocalizationInstall()
         {
             Client.Add("com.unity.localization");
-            Client.Add("https://github.com/LurkingNinja/com.lurking-ninja.codegen.git?path=Packages/com.lurking-ninja.codegen");
         }
     }
 }

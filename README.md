@@ -1,7 +1,11 @@
+# * Discontinued *
+> This Repository is an archive, "new" unified [CodeGen library](https://github.com/LurkingNinja/com.lurking-ninja.codegen).
+---
+
 # Localization Codegen
 This is a simple package to automatically generate accessor code for the [Localization](https://docs.unity3d.com/Packages/com.unity.localization@1.4/manual/index.html) package's [SharedTableData](https://docs.unity3d.com/Packages/com.unity.localization@1.4/api/UnityEngine.Localization.Tables.SharedTableData.html) assets.
 ## Installation
-When you install this package it will automatically try to install the prerequisite package: [Codegen](https://github.com/LurkingNinja/com.lurking-ninja.codegen).
+When you install this package it will automatically try to install the prerequisite Unity Localization package.
 
 You can choose manually installing the package or from GitHub source
 ### Add package from git URL

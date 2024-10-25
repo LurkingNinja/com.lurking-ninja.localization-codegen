@@ -3,8 +3,7 @@
     "rootNamespace": "LurkingNinja.Localization",
     "references": [
         "Unity.Localization",
-        "Unity.Localization.Editor",
-        "com.lurking-ninja.codegen"
+        "Unity.Localization.Editor"
     ],
     "includePlatforms": [
         "Editor"
@@ -16,11 +15,6 @@
     "autoReferenced": true,
     "defineConstraints": [],
     "versionDefines": [
-        {
-            "name": "com.lurkingninja.codegen",
-            "expression": "",
-            "define": "LN_CODEGEN_PRESENT"
-        },
         {
             "name": "com.unity.localization",
             "expression": "",
